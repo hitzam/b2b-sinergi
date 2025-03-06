@@ -42,8 +42,8 @@
                     <!--Top Left-->
                     <div class="top-left pull-left">
                     	<ul class="clearfix">
-                        	<li><strong>Address:</strong> Mountain Drive, Varick Str, UK</li>
-                            <li><strong>Certified:</strong> ISO 9001: 2010</li>
+                        	<li><strong>Address:</strong> Jend MT Haryono Kav. 49, Jakarta, Indonesia.</li>
+                            <li><strong>Certified:</strong> ISO 9001: 2015</li>
                         </ul>
                     </div>
                     <!--Top Right-->
@@ -102,7 +102,7 @@
                                             </li>
                                         </ul> -->
                                     </li>
-                                    <li><a href="#">About</a>
+                                    <li><a href="about.html">About</a>
                                         <!-- <ul>
                                             <li><a href="about.html">About Us</a></li>
                                             <li><a href="team.html">Team</a></li>
@@ -206,8 +206,9 @@
                         <div class="outer-box">
                             <div class="contact-number">
                             	<span class="icon flaticon-technology-3"></span>
-                                Call Us Now
+                                <!-- Call Us Now -->
                                 <strong>+62 21 7987640</strong>
+                                <strong><a href="https://wa.me/628179282777" target="_blank">+62 817 9282 777</a></strong>
                             </div>
                         </div>
                     </div>
@@ -382,30 +383,30 @@
                         <!-- Default Form -->
                         <div class="default-form contact-form">
                             <!--Default Form-->
-                            <form method="post" action="sendemail.php" id="contact-form">
+                            <form action="">
                                 <div class="row clearfix">
                                     <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="text" name="username" placeholder="Enter Name" required>
+                                        <input type="text" id="name" name="username" placeholder="Enter Name" required>
                                     </div>
                                     
                                     <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="email" name="email" placeholder="Enter Email" required>
+                                        <input type="email" id="email" name="email" placeholder="Enter Email" required>
                                     </div>
                                     
                                     <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="text" name="subject" placeholder="Enter Subject" required>
+                                        <input type="text" id="subject" name="subject" placeholder="Enter Subject" required>
                                     </div>
                                     
                                     <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="text" name="phone" placeholder="Enter Phone" required>
+                                        <input type="text" id="phone" name="phone" placeholder="Enter Phone" required>
                                     </div>
                                     
                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                        <textarea name="message" placeholder="Massage"></textarea>
+                                        <textarea id="message" name="message" placeholder="Massage"></textarea>
                                     </div>
                                     
                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form">Sand Now</button>
+                                        <button class="theme-btn btn-style-one" onclick="sendToWhatsapp()">Send on Whatsapp</button>
                                     </div>
                                     
                                 </div>
@@ -421,6 +422,7 @@
                     <ul class="list-style-three">
                     	<li><span class="icon flaticon-note"></span><strong>info@b2bsinergi.com</strong>We reply within 24 hours</li>
                         <li><span class="icon flaticon-telephone"></span><strong>Have Any Question</strong>+62 21 7987640, 7980369</li>
+                        <li><span></span><a href="https://wa.me/628179282777" target="_blank">+62 817 9282 777</a></li>
                         <!-- <li><span class="icon fa flaticon-sent-mail"></span><strong>Email</strong>info@b2bsinergi.com</li> -->
                         <li><span class="icon fa fa-map-marker"></span>MLI Building 2nd Floor, Jl. Let Jend MT Haryono Kav. 49  <br> Jakarta 12770, Indonesia.</li>
                     </ul>
@@ -485,7 +487,7 @@
                             </div>
                             
                             <!--Footer Column-->
-                            <div class="footer-column col-lg-4 col-md-6 col-sm-12">
+                            <!-- <div class="footer-column col-lg-4 col-md-6 col-sm-12">
                                 <div class="footer-widget links-widget">
                                 	<div class="footer-title">
                                 		<h2>Services</h2>
@@ -495,8 +497,8 @@
                                         <li><a href="#">Pipeline management systems (PIPEMAN)</a></li>
                                         <li><a href="#">Leak Detection and Location, Batch Tracking, etc.</a></li>
                                         <li><a href="#">Marine Monitoring System</a></li>
-                                        <!-- <li><a href="#">Thermal Processing</a></li>
-                                        <li><a href="#">Agglomeration and Material Handling Equipment</a></li> -->
+                                        <li><a href="#">Thermal Processing</a></li>
+                                        <li><a href="#">Agglomeration and Material Handling Equipment</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -507,15 +509,11 @@
                                 		<h2>-</h2>
                                     </div>
                                     <ul class="footer-lists">
-                                        <!-- <li><a href="#">Pipeline Control Systems</a></li>
-                                        <li><a href="#">Pipeline management systems (PIPEMAN)</a></li>
-                                        <li><a href="#">Leak Detection and Location, Batch Tracking, etc.</a></li>
-                                        <li><a href="#">Marine Monitoring System</a></li> -->
                                         <li><a href="#">Thermal Processing</a></li>
                                         <li><a href="#">Agglomeration and Material Handling Equipment</a></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> -->
                             
                         </div>
                     </div>
@@ -649,5 +647,6 @@
 <!--End Google Map APi-->
 <!--Color Switcher-->
 <script src="js/color-settings.js"></script>
+<script src="js/whatsapp.js"></script>
 </body>
 </html>

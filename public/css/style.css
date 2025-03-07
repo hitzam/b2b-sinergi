@@ -2297,6 +2297,7 @@ img{
 }
 
 .clients-section .title-column{
+	align-content: center;
 	position:relative;
 	margin-bottom:25px;
 }

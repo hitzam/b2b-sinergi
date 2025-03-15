@@ -843,12 +843,12 @@ img{
 	position:relative;
 	float:left;
 	min-height:56px;
-	margin-left:50px;
+	margin-left:10px;
 	font-size:13px;
 	color:#777777;
 	text-align:left;
 	text-transform:uppercase;
-	padding:0px 0px 20px 50px;
+	padding:0px 0px 20px 40px;
 }
 
 .main-header .info-box:last-child .theme-btn{
@@ -1195,6 +1195,15 @@ img{
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
+}
+
+.main-menu .navigation > li > ul > li > a.sub{
+	text-align: right;
+	display: block;
+	font-size: 12px;
+	color: #0bb356;
+	font-weight: 700;
+	margin-top: 5px;
 }
 
 .main-menu .navigation > li > ul > li:hover > a{
